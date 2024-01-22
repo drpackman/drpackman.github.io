@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Blog Title</title>
-    <link href="/path-to-tailwind.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <!-- Add other head elements -->
 </head>
 <body class="font-sans bg-gray-100">
@@ -18,7 +18,13 @@
             <ul class="flex space-x-4">
                 <li><a href="index.html" class="text-gray-700 hover:text-gray-900">Home</a></li>
                 <li><a href="posts.html" class="text-gray-700 hover:text-gray-900">Posts</a></li>
-                <!-- Add search bar -->
+                <div class="relative mx-4">
+                    <input type="search" class="bg-gray-200 appearance-none border-2 border-gray-200 rounded py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" placeholder="Search...">
+                    <button class="absolute right-0 top-0 mt-3 mr-4">
+                        <!-- Icon or text for search button -->
+                    </button>
+                </div>
+                
             </ul>
         </nav>
     </header>
