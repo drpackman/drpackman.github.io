@@ -7,56 +7,29 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <!-- Add other head elements -->
 </head>
-<body class="font-sans bg-gray-100">
-    <header class="flex justify-between items-center bg-white p-4 shadow-lg">
-        <!-- Logo -->
-        <div class="logo">
-            <a href="index.html">
-                <img src="logo.png" alt="Logo" class="h-12">
-            </a>
-        </div>
-    </header>
-    
-    
+<body class="font-sans bg-gray-100 flex flex-col min-h-screen">
+    <div class="flex-grow">
+        <header class="flex justify-between items-center bg-white p-4 shadow-lg">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="index.html">
+                    <img src="logo.png" alt="Logo" class="h-12">
+                </a>
+            </div>
+        </header>
+        
+        <main class="container mx-auto p-4">
+            <!-- Link to the AI Post -->
+            <div class="post" data-title="The Evolution of Artificial Intelligence">
+                <h2 class="text-xl font-bold mb-2">
+                    <a href="post01.html" class="text-blue-600 hover:text-blue-800">The Evolution of Artificial Intelligence</a>
+                </h2>
+            </div>
+            <!-- More posts -->
+        </main>
+    </div>
 
-
-
-    <main class="container mx-auto p-4">
-        <!-- Link to the AI Post -->
-        <div class="post" data-title="The Evolution of Artificial Intelligence">
-            <h2 class="text-xl font-bold mb-2">
-                <a href="post01.html" class="text-blue-600 hover:text-blue-800">The Evolution of Artificial Intelligence</a>
-            </h2>
-
-        </div>
-    
-        <!-- More posts -->
-    </main>
-    
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <footer class="bg-gray-800 text-white text-center p-4 mt-6">
+    <footer class="bg-gray-800 text-white text-center p-4">
         <p>© 2024 DrPackman. All rights reserved.</p>
     </footer>
     
