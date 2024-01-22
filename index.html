@@ -69,25 +69,5 @@
     <footer class="bg-white text-center p-4 shadow-inner">
         <!-- Footer content -->
     </footer>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const searchInput = document.getElementById('searchInput');
-            const posts = document.querySelectorAll('.post');
-
-            searchInput.addEventListener('input', function(e) {
-                const searchTerm = e.target.value.toLowerCase();
-
-                posts.forEach(post => {
-                    const title = post.getAttribute('data-title').toLowerCase();
-                    if (title.includes(searchTerm)) {
-                        post.style.display = 'block'; // or 'flex', 'grid' etc.
-                    } else {
-                        post.style.display = 'none';
-                    }
-                });
-            });
-        });
-    </script>
 </body>
 </html>
