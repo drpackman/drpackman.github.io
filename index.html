@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="content-width, initial-scale=1.0">
+    <title>Minimal Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.0.18/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="font-sans antialiased text-gray-900 leading-normal tracking-wider bg-cover">
+
+    <nav class="flex justify-between items-center bg-gray-800 p-4">
+        <a href="/" class="text-white text-lg font-bold">
+            <img src="/path/to/logo.png" alt="Logo" class="h-8 w-8">
+        </a>
+        <div class="flex items-center">
+            <a href="/" class="text-white px-4 hover:text-gray-200">Home</a>
+            <a href="/posts" class="text-white px-4 hover:text-gray-200">Posts</a>
+            <div class="flex items-center border-2 border-gray-300 bg-white rounded">
+                <input type="text" class="px-4 py-2 w-80" placeholder="Search...">
+                <button class="flex items-center justify-center px-4 border-l">
+                    <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 6H6a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2v-2M21 21l-4-4M3 3l18 18"></path></svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div id="content">
+        <!-- Your blog content goes here -->
+    </div>
+
+    <button onclick="scrollToTop()" class="hidden fixed bottom-4 right-4 bg-blue-500 text-white p-2 rounded-full" id="backToTopBtn">
+        ↑ Top
+    </button>
+
+    <script>
+        // JavaScript to show the back-to-top button
+        window.onscroll = function() {
+            var backToTopBtn = document.getElementById("backToTopBtn");
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                backToTopBtn.style.display = "block";
+            } else {
+                backToTopBtn.style.display = "none";
+            }
+        };
+
+        function scrollToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+</body>
+</html>
